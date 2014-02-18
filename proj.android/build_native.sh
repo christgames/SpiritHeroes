@@ -1,7 +1,6 @@
 APPNAME="RodeoJudge"
 
 # options
-
 buildexternalsfromsource=
 
 usage(){
