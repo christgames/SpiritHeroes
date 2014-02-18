@@ -121,7 +121,7 @@ Follow these steps for installing each component.
 * Click on/*hightlight* **SpiritHeroes** package under **Package Explorer** and then select **Run** menu and **Run As** option and **Android Application**.
 * Running the game will also create **..\proj.android\bin\SpiritHeroes.apk**. This file will be copied and installed on your device, and then automatically started. 
 * You can manually copy the **.apk** file to a device via **sideloading**. You will need to enable this option on your device if you want to manually install and run.
-* A sample game package file can be downloaded here: [https://github.com/christgames/SpiritHeroes/proj.android/bin/SpiritHeroes.apk](https://github.com/christgames/SpiritHeroes/proj.android/bin/SpiritHeroes.apk)
+* A sample game package file is compiled in **..\SpiritHeroes\proj.android\bin\SpiritHeroes.apk**.
 
 ### GitHub
 
