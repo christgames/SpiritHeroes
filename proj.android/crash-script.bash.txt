@@ -1,0 +1,6 @@
+export ANDROID_NDK=/cygdrive/c/android-ndk
+cd $ANDROID_NDK
+export PROJECT_PATH=/cygdrive/c/ChristGames/projects/RodeoJudge/proj.android/obj/local/armeabi
+adb logcat | ./ndk-stack -sym $PROJECT_PATH
+cd $PROJECT_PATH
+$ANDROID_NDK/toolchains/arm-linux-androideabi-4.8/prebuilt/windows-x86_64/bin/arm-linux-androideabi-addr2line -C -f -e libc.so 0001125c
