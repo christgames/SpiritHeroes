@@ -166,12 +166,16 @@ Follow these steps for installing each component.
 ##### Pulling files from GitHub
 
 * Run the **Git Bash** console program.
-* Enter these commands.
+* Enter these commands to get the latest updates.
 <pre>
 	cd /c/ChristGames/Projects/SpiritHeroes
 	git pull origin
 </pre>
 
+* You can also force a file to be downloaded from **GitHub** if it was deleted on you local computer with this command.
+<pre>
+	git checkout SomeFileName
+</pre> 
 ##### GitHub - Final Words
 
 * This document is only a starter for **Git** and **GitHub** commands and concepts. Please refer to other documents and tutorials if you wish to be well versed in the technology. 
