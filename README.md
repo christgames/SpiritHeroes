@@ -112,14 +112,14 @@ Follow these steps for installing each component.
 
 ##### Emulators and physical devices
 
-* Testing can be done using software emulators or actual Android devices connected via a USB cable. 
-* **Please note, software emulators often do NOT work well and are very slow. If available, it is better to use a real Android device for testing.** 
+* Testing can be done using software emulators or actual Android devices connected via a USB cable.
+* **Please note, software emulators often do NOT work well and are very slow. If available, it is better to use a real Android device for testing.**
 * Follow this link to download the USB drivers and instructions for your device. [http://developer.android.com/sdk/win-usb.html](http://developer.android.com/sdk/win-usb.html) 
 
 ##### Running the game
 
 * Click on/*hightlight* **SpiritHeroes** package under **Package Explorer** and then select **Run** menu and **Run As** option and **Android Application**.
-* Running the game will also create **..\proj.android\bin\SpiritHeroes.apk**. This file will be copied and installed on your device, and then automatically started. 
+* Running the game will also create **..\proj.android\bin\SpiritHeroes.apk**. This file will be copied and installed on your device, and then automatically started.
 * You can manually copy the **.apk** file to a device via **sideloading**. You will need to enable this option on your device if you want to manually install and run.
 * A sample game package file is compiled in **..\SpiritHeroes\proj.android\bin\SpiritHeroes.apk**.
 
