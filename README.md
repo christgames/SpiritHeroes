@@ -44,7 +44,7 @@ Follow these steps for installing each component.
 	* **c:\adt-bundle\eclipse**
 	* **c:\adt-bundle\sdk**
 	* **c:\adt-bundle\SDK Manager.exe**
-* Add environment variable **ANDROID\_SDK\_ROOT=c:\adt-bundle**.
+* Add environment variable **ANDROID\_SDK\_ROOT=c:\adt-bundle\sdk**.
 * Right Click on **c:\adt-bundle\eclipse\eclipse.exe** and make an icon on your desktop and call it **Eclipse**.
 
 ##### Android NDK
