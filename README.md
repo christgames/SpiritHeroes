@@ -14,7 +14,7 @@ Download each of these required components. **You will need about 10gb free for 
 * **Cocos2d-x library** - (3.x version / not 2.x) [http://cocos2d-x.org/](http://cocos2d-x.org/)
 * **Microsoft .NET Framework** (4.5.1 version or better) [http://www.microsoft.com/en-us/download/details.aspx?id=40779](http://www.microsoft.com/en-us/download/details.aspx?id=40779) 
 * **Visual Studio Express** - (version 2013) [http://www.microsoft.com/en-us/download/details.aspx?id=40787](http://www.microsoft.com/en-us/download/details.aspx?id=40787)
-	* Update #1 - [http://www.microsoft.com/en-us/download/details.aspx?id=41650](http://www.microsoft.com/en-us/download/details.aspx?id=41650)
+	* Update 2 RC - [http://www.microsoft.com/en-us/download/details.aspx?id=42307](http://www.microsoft.com/en-us/download/details.aspx?id=42307)
 * **Spirt Heroes Code** - (Use **Git** to download) [https://github.com/christgames/SpiritHeroes](https://github.com/christgames/SpiritHeroes)
 
 ### Install
@@ -38,7 +38,7 @@ Follow these steps for installing each component.
 * Install **wdexpress\_full.exe**, or **VS2013\_RTM\_DskExp\_ENU.iso**, if you downloaded the CD image file.
 * Select all default options and **Launch** Visual Studio.
 * Go to **Help** and then **Register Product**. *(You will need to sign in or register to get a license. Please note, the license is **free** for the **Express** version of Visual Studio.)*
-* Install Update #1 **VS2013.1.exe** with all defaults.
+* Install Update #2 **VS2013.2 RC.exe** with all defaults.
 
 ### Import and Compile
 
