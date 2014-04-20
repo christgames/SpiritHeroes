@@ -8,7 +8,7 @@ class Intro : public cocos2d::CCLayer
 {
 public:
     virtual bool init();
-    static cocos2d::CCScene* scene();
+	static cocos2d::Scene* createScene();
 	void IntroImage(CCNode* sender, void* data);
 	void NextScene(CCNode* sender, void* data);
 	void RemoveChildSeq(CCObject* pObj);

@@ -6,11 +6,12 @@
 
 USING_NS_CC;
 
-CCScene* Intro::scene() {
-    CCScene *scene = CCScene::create();
-    Intro *layer = Intro::create();
-    scene->addChild(layer);
-    return scene;
+Scene* Intro::createScene()
+{
+	auto scene = Scene::create();
+	auto layer = Intro::create();
+	scene->addChild(layer);
+	return scene;
 }
 
 bool Intro::init() {

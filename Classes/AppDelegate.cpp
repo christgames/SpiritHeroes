@@ -10,16 +10,20 @@ AppDelegate::~AppDelegate() {
 }
 
 bool AppDelegate::applicationDidFinishLaunching() {
-    CCDirector* pDirector = CCDirector::sharedDirector();
-    CCEGLView* pEGLView = CCEGLView::sharedOpenGLView();
-    pDirector->setOpenGLView(pEGLView);
-    pDirector->setDisplayStats(false);
-    pDirector->setAnimationInterval(1.0 / 60);
-	pEGLView->setDesignResolutionSize(CCEGLView::sharedOpenGLView()->getFrameSize().width, CCEGLView::sharedOpenGLView()->getFrameSize().height, kResolutionNoBorder);
-	pEGLView->setFrameSize(CCEGLView::sharedOpenGLView()->getFrameSize().width, CCEGLView::sharedOpenGLView()->getFrameSize().height);
-	pDirector->setContentScaleFactor(1.0f);
-	CCScene *pIntroScene = Intro::scene();
-    pDirector->runWithScene(pIntroScene);
+	auto director = Director::getInstance();
+	auto glview = director->getOpenGLView();
+	if (!glview) {
+		glview = GLView::create("Spirit Heroes - The Adventure Begins");
+		director->setOpenGLView(glview);
+	}
+	director->setDisplayStats(false);
+	glview->setDesignResolutionSize(glview->getFrameSize().width, glview->getFrameSize().height, kResolutionNoBorder);
+	glview->setFrameSize(glview->getFrameSize().width, glview->getFrameSize().height);
+	director->setContentScaleFactor(1.0f);
+	director->setAnimationInterval(1.0 / 60);
+	auto scene = Intro::createScene();
+	director->runWithScene(scene);
+
     return true;
 }
 

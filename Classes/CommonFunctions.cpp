@@ -3,7 +3,7 @@
 #include <fstream>
 #include <iomanip>
 #include <stdio.h>
-#include "..\..\..\cocos2dx\support\tinyxml2\tinyxml2.h"
+#include "tinyxml2\tinyxml2.h"
 
 USING_NS_CC;
 using namespace std;
@@ -35,7 +35,7 @@ void ExecuteProcess(wchar_t *str) {
 void MsgBoxFloat(float v) {
 	TCHAR s[80];
 	StringCchPrintf(s, 30, TEXT("%f"), v);
-	MessageBox(NULL,s,L"Float value is:",MB_OK);
+//	MessageBox(NULL,s,L"Float value is:",MB_OK);
 }
 
 #endif
@@ -43,8 +43,7 @@ void MsgBoxFloat(float v) {
 //TinyXML Get XML Float Attribute
 float XMLGetf(const char *filename, const char *root, const char *child, const char *attrib) {
 	tinyxml2::XMLDocument doc;
-	unsigned long bufferSize = 0;
-	unsigned char *fileContent = CCFileUtils::sharedFileUtils()->getFileData(filename, "r", &bufferSize);
+	unsigned char *fileContent = CCFileUtils::sharedFileUtils()->getFileData(filename, "r", 0);
 	doc.Parse((char*)fileContent);
 	tinyxml2::XMLElement* element = doc.FirstChildElement(root)->FirstChildElement(child);
 	float val = atof(element->Attribute(attrib));
@@ -56,8 +55,7 @@ float XMLGetf(const char *filename, const char *root, const char *child, const c
 //TinyXML Get XML Text Attribute
 const char *XMLGett(const char *filename, const char *root, const char *child, const char *attrib) {
 	tinyxml2::XMLDocument doc;
-	unsigned long bufferSize = 0;
-	unsigned char *fileContent = CCFileUtils::sharedFileUtils()->getFileData(filename, "r", &bufferSize);
+	unsigned char *fileContent = CCFileUtils::sharedFileUtils()->getFileData(filename, "r", 0);
 	doc.Parse((char*)fileContent);
 	tinyxml2::XMLElement* element = doc.FirstChildElement(root)->FirstChildElement(child);
 	std::string val = element->Attribute(attrib);
@@ -71,11 +69,10 @@ const char *XMLGett(const char *filename, const char *root, const char *child, c
 //TinyXML Put XLM Attribute
 void XMLPut(const char *filename, const char *root, const char *child, const char *attrib, const char *value) {
 	tinyxml2::XMLDocument doc;
-	unsigned long bufferSize = 0;
 	char datFile[1024] = "";
 	strcat(datFile,GetDataPath(filename));
 	unsigned char *fileContent;
-	fileContent = CCFileUtils::sharedFileUtils()->getFileData(datFile, "r", &bufferSize);
+	fileContent = CCFileUtils::sharedFileUtils()->getFileData(datFile, "r",0);
 	doc.Parse((char*)fileContent);
 	tinyxml2::XMLElement* element = doc.FirstChildElement(root)->FirstChildElement(child);
 	element->SetAttribute(attrib,value);
@@ -177,13 +174,12 @@ char* GetDataPath(const char *filename) {
 
 //Initialize setup.xml
 void InitSetupXML(const char *filename) {
-	unsigned long bufferSize = 0;
 	char datFile[1024] = "";
 	strcat(datFile,GetDataPath(filename));
 	CCLog("%s \n",datFile);
 	if (!CCFileUtils::sharedFileUtils()->isFileExist(datFile)) {
 		unsigned char *origContent;
-		origContent = CCFileUtils::sharedFileUtils()->getFileData(filename, "r", &bufferSize);
+		origContent = CCFileUtils::sharedFileUtils()->getFileData(filename, "r", 0);
 		ofstream dest(datFile, ios::out);
 		dest << origContent;
 		dest.close();

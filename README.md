@@ -6,16 +6,70 @@ This is a 2D game written in C++ using the Cocos2d-x library. It is a complement
 ### License
 **MIT** - [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT)
 
-### Setting up Android development environment (Windows 7/8)
+## Setting up Windows development environment (Windows 7/8)
 
 ### Download
 Download each of these required components. **You will need about 10gb free for all of these files.** *(Depending upon your download speed, this can take several hours to complete.)*
 
-* **Cocos2d-x library** - (2.x version / not 3.0) [http://cocos2d-x.org/](http://cocos2d-x.org/)
+* **Cocos2d-x library** - (3.x version / not 2.x) [http://cocos2d-x.org/](http://cocos2d-x.org/)
+* **Microsoft .NET Framework** (4.5.1 version or better) [http://www.microsoft.com/en-us/download/details.aspx?id=40779](http://www.microsoft.com/en-us/download/details.aspx?id=40779) 
+* **Visual Studio Express** - [http://www.microsoft.com/en-us/download/details.aspx?id=40787](http://www.microsoft.com/en-us/download/details.aspx?id=40787)
+	* Update #1 - [http://www.microsoft.com/en-us/download/details.aspx?id=41650](http://www.microsoft.com/en-us/download/details.aspx?id=41650)
+* **Spirt Heroes Code** - (Use **Git** to download) [https://github.com/christgames/SpiritHeroes](https://github.com/christgames/SpiritHeroes)
+
+### Install
+
+Follow these steps for installing each component.
+
+##### COCOS2DX
+
+* Unzip **cocos2d-x-3.0???.zip** and copy these three folders to
+	* **c:\ChristGames\Projects\SpiritHeroes\cocos2d\cocos**
+	* **c:\ChristGames\Projects\SpiritHeroes\cocos2d\extensions**
+	* **c:\ChristGames\Projects\SpiritHeroes\cocos2d\external**
+
+##### Microsoft .NET Framework
+
+* Version **4.5.1** of the **.NET Framework** is included with **Windows 8.1**. You should not have to install it if your Operating System is already upgraded.
+* Install **NDP451-KB2858728-x86-x64-AllOS-ENU.exe** with all defaults.
+
+##### VS Express
+
+* Install **wdexpress\_full.exe**, or **VS2013\_RTM\_DskExp\_ENU.iso**, if you downloaded the CD image file.
+* Select all default options and **Launch** Visual Studio.
+* Go to **Help** and then **Register Product**. *(You will need to sign in or register to get a license. Please note, the license is **free** for the **Express** version of Visual Studio.)*
+* Install Update #1 **VS2013.1.exe** with all defaults.
+
+### Import and Compile
+
+* Open **c:\ChristGames\Projects\SpiritHeroes\proj.win32\SpiritHeroes.sln** solutions file with **Visual Studio**.
+* Convert three projects (**libAudio**, **libchipmunk**, and **libcocos2d**) from version **VS 2010** to **VS 2013**.
+	* You may be prompted to do this when you open the solutions file for the first time.
+	* To manually upgrade, **right click** on the project name in the solutions explorer and select "**Upgrade...**".
+* Select the **BUILD** menu and **Clean Solution**.
+* Select the **BUILD** menu and **Build Solution**.
+
+### Testing
+
+* Select **Debug** or **Release** from the drop down option at the top of the menus next to **Win32**.
+* Select **DEBUG** menu and **Start Debugging** option. The game will then start. 
+* You will also need to copy the contents of **c:\ChristGames\Projects\SpiritHeroes\Resources** to **..\proj.win32\Debug.win32** or **..\proj.win32\Release.win32** folders if your run the **.EXE** directly.
+
+
+##### Spirit Heroes Source Code
+
+* ChristGames.org source code is stored on **GitHub**. Follow the steps in the section below to setup your computer to download and upload files to this site.
+
+## Setting up Android development environment (Windows 7/8)
+
+### Download
+Download each of these required components. **You will need about 10gb free for all of these files.** *(Depending upon your download speed, this can take several hours to complete.)*
+
+* **Cocos2d-x library** - (3.x version / not 2.x) [http://cocos2d-x.org/](http://cocos2d-x.org/)
 * **Java SE - JDK** - (version 7+ - Windows x64) [http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
-* **Android SDK** - (latest version) [http://developer.android.com/sdk/index.html](http://developer.android.com/sdk/index.html)
+* **Android SDK** - (latest 64 bit version) [http://developer.android.com/sdk/index.html](http://developer.android.com/sdk/index.html)
 * **Android NDK** - (latest 64 bit version) [http://developer.android.com/tools/sdk/ndk/index.html](http://developer.android.com/tools/sdk/ndk/index.html)
-* **Cygwin** - (setup-x86_64.exe) [http://cygwin.com/](http://cygwin.com/)
+* **Python** (2.7.x version / not 3.x) [https://www.python.org/downloads/](https://www.python.org/downloads/)
 * **Spirt Heroes Code** - (Use **Git** to download) [https://github.com/christgames/SpiritHeroes](https://github.com/christgames/SpiritHeroes)
 
 ### Install
@@ -24,23 +78,20 @@ Follow these steps for installing each component.
 
 ##### COCOS2DX
 
-* Unzip **cocos2d-x-2.???.zip** and copy these folders to **c:\ChristGames**.
-	* **c:\ChristGames\cocos2dx**
-	* **c:\ChristGames\CocosDenshion**
-	* **c:\ChristGames\extensions**
-	* **C:\ChristGames\external**
-	* **c:\ChristGames\scripting**
-* Add environment variable **COCOS2DX\_ROOT=c:\ChristGames\cocos2dx**.
+* Unzip **cocos2d-x-3.0???.zip** and copy these three folders to
+	* **c:\ChristGames\Projects\SpiritHeroes\cocos2d\cocos**
+	* **c:\ChristGames\Projects\SpiritHeroes\cocos2d\extensions**
+	* **c:\ChristGames\Projects\SpiritHeroes\cocos2d\external**
 
 ##### Java JDK
 
 * Install **Java JDK** to **c:\Program Files\Java\jdk**.
 * Install **Java JRE** to **c:\Program Files\Java\jre** (default);
-	* Add environment varialbe **JAVA_HOME=c:\Program Files\Java\jdk**.
+* Add environment varialbe **JAVA\_HOME=c:\Program Files\Java\jdk**.
 
 ##### Android SDK
 
-* Unzip **adt-bundle-windows-x86\_64-???.zip** and copy these files and folders to **c:\adt-bundle**.
+* Unzip **adt-bundle-windows-x86\_64-???.zip** and copy these files and folders to
 	* **c:\adt-bundle\eclipse**
 	* **c:\adt-bundle\sdk**
 	* **c:\adt-bundle\SDK Manager.exe**
@@ -49,7 +100,7 @@ Follow these steps for installing each component.
 
 ##### Android NDK
 
-* Unzip **android-ndk-???-windows-x86\_64.zip** and copy thes files and folders to **c:\android-ndk**.
+* Unzip **android-ndk-???-windows-x86\_64.zip** and copy thes files and folders to
 	* **c:\android-ndk\\***
 	* **c:\android-ndk\build**
 	* **c:\android-ndk\docs**
@@ -59,25 +110,10 @@ Follow these steps for installing each component.
 	* **c:\android-ndk\sources**
 * Add environment variable **NDK\_ROOT=c:\android-ndk**.
 
-##### Cygwin
+##### Python
 
-* Run Cygwin **setup-x86\_64.exe** and follow these steps.
-	* Select **Install from Internet**.
-	* **c:\Cygwin64** (default) and **RECOMMENDED**.
-	* Local Package Directory **c:\Cygwin64** (change default).
-	* Direct Connection
-	* Pick any mirror site
-	* Pick these packages to install **autoconf**, **automake**, **binutils**, **gcc-core**, **gcc-g**, **gdb**, **pcre**, **gawk**, and **make**.
-	* Selecting packages is **very awkward** in Cygwin. Follow these helpful tips.
-		* Click the **View** button to change to **"Full"** mode.
-		* Enter the package name from above in the **Search** prompt. This will filter the packages to just that name.
-		* Click on **Skip** once under New column. This will select the latest version. Select all packages listed.
-		* Search for the next package group and repeat the selection by clicking **Skip** once. Select all packages listed.
-		* **Please note**, you may see some packages listed with **Keep** or a version number instead of **Skip**. That means you have already selected them from a previous package. You do not have to select them again.
-		* After all bundled packages have been selected from the list above, press the **Next** button to continue and download them.
-		* If you missed downloading a package, you can run **setup-x86\_64.exe** again to get them.
-		* Complete the rest of the setup with defaults.
-* Add the **bin** folder to the end of the **PATH** environment variable **;c:\Cygwin64\bin**. *(This environment variable should already exist).*
+* Execute **python-2.7.?.msi** and install for **all users** in **c:\Python27** folder.
+* Choose default options when prompted.
 
 ##### Spirit Heroes Source Code
 
@@ -90,23 +126,19 @@ Follow these steps for installing each component.
 * Go to **File** and then **Import**, and then **Android** and **Existing Android code into Workspace**.
 * Click the **Browse** button and navigate to **c:\ChristGames\Projects\SpiritHeroes\proj.android** folder and press **Finish**.
 * Go to **File** and then **Import**, and then **Android** and **Existing Android code into Workspace**. 
-* Click the **Browse** button and navigate to **c:\ChristGames\cocos2dx\platform\android\java** folder and press **Finish**.
+* Click the **Browse** button and navigate to **c:\ChristGames\Projects\SpiritHeroes\cocos2d\cocos\2d\platform\android** folder and press **Finish**.
 * Close the **Welcome!** screen window to see the **Package Explorer**. 
 * Go to the **Window** menu and then **Android SDK Manager**.
 	* Check **Android 2.3.3 (API 10)** and all packages below it.
 	* Leave other default packages checked.
 	* Press **Install "X" Packages** button.
 	* Accept the license to download the packages. *(Occasionally the download might stop for a file lock conflict. When this happens, kill the last running Java process in Task Manager to continue the download process.)*
-	* Once all packages have downloaded, select/highlight the **SpiritHeroes** project in the **Package Explorer** window.
-	* Click on the **Project** menu and the **Properties** option.
-	* Select **Android** from the list on the left.
-	* Select **Google APIs version 2.3.3** in the **Project Build Target**.
-	* Press the **Apply** button first, then the **OK** button.
-* Click on **SpiritHeroes** package under **Package Explorer** again and then select **Project** menu and **Clean**.
-* Press **OK** to clean **all** projects.
-* Select **Project** menu again and **Build All** option. *(This will take several minutes to complete)*. 
-* If you see any **Errors** in the **Problems** tab at the bottom of the Eclipse IDE when the build completes, then the build was **NOT** successful. Review all of the steps in this document. Correct any setup mistakes and try again. *(Please Note - A few **Warning** messages are normal and will not stop the build.)*
-* If you do not see any errors under the **Problem** tab then your build was a **SUCCESS!** You can now contribute to programming this game!
+* Once all packages have downloaded, select/highlight the **SpiritHeroes** project in the **Package Explorer** window.
+* Click on the **Project** menu and the **Properties** option.
+* Select **Android** from the list on the left.
+* Select **Android 2.3.3** in the **Project Build Target**.
+* Press the **Apply** button first, then the **OK** button.
+* Double-Click on **build_native.py** file under the **SpiritHeroes** project under **Package Explorer** *(This will compile the source code)*.
 
 ### Testing
 
@@ -120,14 +152,13 @@ Follow these steps for installing each component.
 
 * Click on/*hightlight* **SpiritHeroes** package under **Package Explorer** and then select **Run** menu and **Run As** option and **Android Application**.
 * Running the game will also create **..\proj.android\bin\SpiritHeroes.apk**. This file will be copied and installed on your device, and then automatically started.
-* You can manually copy the **.apk** file to a device via **sideloading**. You will need to enable this option on your device if you want to manually install and run.
-* A sample game package file is compiled in **..\SpiritHeroes\proj.android\bin\SpiritHeroes.apk**.
+	* You can also manually copy the **.apk** file to a device via **sideloading**. You will need to enable this option on your device if you want to manually install and run.
 
-### GitHub
+## GitHub
 
 ##### Overview
 
-* **ChristGames.org** uses **GitHub**, *an industry standard source code repository site*, for storing game source code and some assets. It is **free** to use for Open Source projects. 
+* **ChristGames.org** uses **GitHub**, for storing game source code and some assets. It is **free** to use for Open Source projects. 
 * Go to [https://github.com/](https://github.com) and open an account and then download the latest version of the **Git Bash** client here [http://git-scm.com/downloads](http://git-scm.com/downloads). ***Install the Git client with defaults settings***.
 * You can also use the **GitHub GUI client for Windows** from this site [http://windows.github.com/](http://windows.github.com/). Refer to the online documentation for using this client.
 * We will focus on the standard command line **Git Bash** client for the remaining instructions.
