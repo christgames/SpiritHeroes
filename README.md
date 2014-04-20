@@ -13,7 +13,7 @@ Download each of these required components. **You will need about 10gb free for 
 
 * **Cocos2d-x library** - (3.x version / not 2.x) [http://cocos2d-x.org/](http://cocos2d-x.org/)
 * **Microsoft .NET Framework** (4.5.1 version or better) [http://www.microsoft.com/en-us/download/details.aspx?id=40779](http://www.microsoft.com/en-us/download/details.aspx?id=40779) 
-* **Visual Studio Express** - [http://www.microsoft.com/en-us/download/details.aspx?id=40787](http://www.microsoft.com/en-us/download/details.aspx?id=40787)
+* **Visual Studio Express** - (version 2013) [http://www.microsoft.com/en-us/download/details.aspx?id=40787](http://www.microsoft.com/en-us/download/details.aspx?id=40787)
 	* Update #1 - [http://www.microsoft.com/en-us/download/details.aspx?id=41650](http://www.microsoft.com/en-us/download/details.aspx?id=41650)
 * **Spirt Heroes Code** - (Use **Git** to download) [https://github.com/christgames/SpiritHeroes](https://github.com/christgames/SpiritHeroes)
 
