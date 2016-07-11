@@ -159,6 +159,7 @@ Follow these steps for installing each component.
 ##### Overview
 
 * **ChristGames.org** uses **GitHub**, for storing game source code and some assets. It is **free** to use for Open Source projects. 
+* Contact [doug@christgames.org](doug@christgames.org) and ask to be added as a contributor if you would like to help with the project.
 * Go to [https://github.com/](https://github.com) and open an account and then download the latest version of the **Git Bash** client here [http://git-scm.com/downloads](http://git-scm.com/downloads). ***Install the Git client with defaults settings***.
 * You can also use the **GitHub GUI client for Windows** from this site [http://windows.github.com/](http://windows.github.com/). Refer to the online documentation for using this client.
 * We will focus on the standard command line **Git Bash** client for the remaining instructions.
@@ -215,5 +216,5 @@ Follow these steps for installing each component.
 
 ### Reference Links
 
-* **Spirit Heroes** - [http://www.spiritheroes.net/](http://www.spiritheroes.net/)
+* **Spirit Heroes** - [http://www.wordfamily.faith/shop](http://www.wordfamily.faith/shop)
 * **ChristGames.org** - [http://christgames.org/](http://christgames.org/)
