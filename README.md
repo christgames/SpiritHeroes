@@ -191,7 +191,7 @@ Follow these steps for installing each component.
 * Make sure you **add meaningful comments** for all changes so it is clear what was updated or added.
 * Once you submit the **git push** command, you will be prompted for your user name and password. This is the account you setup on **GitHub**.
 
-##### Pulling files from GitHub --- test ---
+##### Pulling files from GitHub
 
 * Run the **Git Bash** console program.
 * Enter these commands to get the latest updates.
