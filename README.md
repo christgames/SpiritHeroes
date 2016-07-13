@@ -166,11 +166,7 @@ Follow these steps for installing each component.
 
 ##### First Time Download and Initialization
 
-* Run the **Git Bash** console program. You should should have an icon on your desktop when it was installed. If not, you can manually run it with this command.
-<pre>
-	"c:\Program Files (x86)\Git\bin\sh.exe" --login -i
-</pre>
-
+* Run the **Git Bash** console program. You should should have an icon on your desktop when it was installed.
 * Enter each of these commands in the **Git Bash** console. Replace the name and email details in "" with your information.
 <pre>
 	cd /c/ChristGames/Projects
