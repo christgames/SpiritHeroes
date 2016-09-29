@@ -6,7 +6,7 @@ This is a 3D game created in Unreal Engine 4.x. It is a complementary media proj
 ### License
 **MIT** - [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
 
-## Setting up Windows development environment
+## Setting up development environment
 
 ### Download
 Download each of these required components. **You will need about 10gb free for all of these files.** *(Depending upon your download speed, this can take several hours to complete.)*
@@ -26,6 +26,14 @@ Follow these steps for installing each component.
 ##### Git
 
 * Install with defaults
+
+##### Level Files
+
+* The Unreal engine stores all assets in a file alled ".umap" per level. This file tends to be very large; in the multi gigabyte range. GitHub only allows 100mb files and has a 1GB maximum size limit. To accomodate this, we only store sample level files on GitHub. The master level files are stored on Christ Games FTP repository. You can download all *.umap files here with your browser. [http://www.christgames.org/ftp/games/index.php?dir=projects/spiritheroes/assets/levels](http://www.christgames.org/ftp/games/index.php?dir=projects/spiritheroes/assets/levels). Copy them into your Content folder after getting the main files from GitHub.
+
+##### Additional Files
+
+* We are also storing the original mesh ".blend" **Blender** source files on our FTP servers along with any image and other large asset files we import into the engine. Please copy the **meshes** and **import** folders [http://www.christgames.org/ftp/games/?dir=projects%2Fspiritheroes](http://www.christgames.org/ftp/games/?dir=projects%2Fspiritheroes) to your root projects folder for a complete copy of all source files for the game.
 
 ### Import and Compile
 
