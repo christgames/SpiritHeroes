@@ -22,7 +22,7 @@ Follow these steps for installing each component.
 
 ##### Unreal Engine
 
-* Install with defaults
+* Install with defaults (Make sure starter content and templates are checked.)
 
 ##### Git
 
