@@ -44,8 +44,6 @@ Follow these steps for installing each component.
 
 * Press play button in Unreal Engine
 
-##### Spirit Heroes Source Code
-
 ## GitHub
 
 ##### Overview
