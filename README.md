@@ -57,7 +57,7 @@ Follow these steps for installing each component.
 ##### First Time Download and Initialization
 
 * Run the **Git Bash** console program for Windows. You should should have an icon on your desktop when it was installed. (Use the built-in Terminal application for Mac.)
-* Enter each of these commands in the **Git Bash** console. Replace the name and email details in "" with your information.
+* Enter each of these commands in the **Git Bash** console. Replace the name and email details in "" and [] with your information.
 <pre>
 	Windows
 	cd /c/ChristGames/Projects
