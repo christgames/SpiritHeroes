@@ -74,7 +74,7 @@ Follow these steps for installing each component.
 
 ##### Pushing files to GitHub
 
-* Run the **Git Bash** console program.
+* Run the **Git Bash** console program for Windows or the built-in Terminal application for Mac.
 * Enter these commands.
 <pre>
 	Windows
@@ -93,7 +93,7 @@ Follow these steps for installing each component.
 
 ##### Pulling files from GitHub
 
-* Run the **Git Bash** console program.
+* Run the **Git Bash** console program for Windows or the built-in Terminal application for Mac.
 * Enter these commands to get the latest updates.
 <pre>
 	Windows
