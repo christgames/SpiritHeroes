@@ -1,7 +1,7 @@
 # Spirit Heroes by ChristGames.org
 ***
 ### Information
-This is a 3D game created in Unreal Engine 4.x. It is a complementary media project for the book series written by **Erica Bertram** [http://www.spiritheroes.net/](http://www.spiritheroes.net).
+This is a 3D game created in Unreal Engine 4.x. It is a complementary media project for the book series written by **Erica Bertram** [http://www.wordfamily.faith/shop](http://www.wordfamily.faith/shop).
 
 ### License
 **MIT** - [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
