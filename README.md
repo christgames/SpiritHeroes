@@ -119,3 +119,4 @@ Follow these steps for installing each component.
 
 * **Spirit Heroes** - [http://www.wordfamily.faith/shop](http://www.wordfamily.faith/shop)
 * **ChristGames.org** - [http://christgames.org/](http://christgames.org/)
+* **Facebook** - [https://www.facebook.com/spiritheroesgame/](https://www.facebook.com/spiritheroesgame/)
