@@ -72,3 +72,16 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Custom Folders
+book/*
+Docs/*
+imports/*
+Marketing/*
+meshes/*
+Mixamo/*
+pics/*
+tutorials/*
+Videos/*
+VO/*
+
